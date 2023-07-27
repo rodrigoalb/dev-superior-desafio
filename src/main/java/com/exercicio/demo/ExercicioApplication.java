@@ -9,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 @SpringBootApplication
@@ -24,6 +25,7 @@ public class ExercicioApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		Locale.setDefault(Locale.US);
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Insira o código do pedido: ");
